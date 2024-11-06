@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "ES2015",            // Specifies the JavaScript language version to which TypeScript should be compiled.
+    "module": "commonjs",          // The module system to use. "commonjs" is the default for Node.js projects.
+    "moduleResolution": "node",    // How TypeScript resolves modules. Use "node" for Node.js projects.
+    "strict": true,                // Enable all strict type-checking options.
+    "esModuleInterop": true,       // Enable compatibility for `import` syntax when importing CommonJS modules.
+    "skipLibCheck": true,          // Skips type checking of declaration files (can speed up compilation).
+    "forceConsistentCasingInFileNames": true, // Ensures consistent casing in file names (important for cross-platform compatibility).
+    "lib": ["ES2015", "DOM"],      // Specifies which library files to include. "ES2015" includes Promise, async/await, etc., and "DOM" is for browser APIs.
+    "outDir": "./dist",            // Specifies the output directory for compiled JavaScript files.
+    "rootDir": "./src",            // Specifies the root directory of your source TypeScript files.
+    "sourceMap": true,             // Generates `.map` files for debugging purposes.
+    "declaration": true,           // Generates `.d.ts` declaration files for TypeScript type definitions.
+    "allowJs": true,               // Allows JavaScript files to be included in the project.
+    "resolveJsonModule": true,     // Allows importing JSON files as modules.
+    "removeComments": true         // Removes comments from the output JavaScript files.
+  },
+  "include": [
+    "src/**/*.ts"                   // Include all TypeScript files under the "src" directory.
+  ],
+  "exclude": [
+    "node_modules"                  // Exclude the "node_modules" directory.
+  ]
+}
