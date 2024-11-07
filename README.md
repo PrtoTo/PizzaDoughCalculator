@@ -11,6 +11,12 @@ make dough AMOUNT=<amount> TYPE=<type>
 ### 2. Using Docker
 You can also build and run the program using Docker:
 Build the Docker image:
+```
 docker build -t pizza-cli .
+``` 
+
 Run the Docker container with the desired parameters:
+```
 docker run --rm pizza-cli <amount> <type>
+``` 
+
