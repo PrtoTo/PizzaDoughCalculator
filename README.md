@@ -18,5 +18,18 @@ docker build -t pizza-cli .
 Run the Docker container with the desired parameters:
 ```
 docker run --rm pizza-cli <amount> <type>
-``` 
+```
+
+### 3. Using TypeScript and Node.js
+If you prefer running the program directly via Node.js:
+
+Compile the TypeScript code:
+```
+tsc
+```
+Run the compiled JavaScript file:
+```
+node pizza.js <amount> <type>
+```
+
 
