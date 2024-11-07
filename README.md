@@ -31,5 +31,46 @@ Run the compiled JavaScript file:
 ```
 node pizza.js <amount> <type>
 ```
+Where:
+
+    <amount> is the number of pizzas.
+    <type> is either Yeast or Sourdough.
+
+Example:
+```
+node pizza.js 5 Yeast
+```
+Example Output
+For Yeast type with 5 pizzas, the output might look like:
+```
+┌─────────────────────────┬──────────┬───────┐
+│ Dough Ingredients🍞     │ amount   │ %     │
+├─────────────────────────┼──────────┼───────┤
+│ Flour:                  │ 748g     │ 100%  │
+├─────────────────────────┼──────────┼───────┤
+│ Water:                  │ 486g     │ 60%   │
+├─────────────────────────┼──────────┼───────┤
+│ Salt:                   │ 15g      │ 2%    │
+├─────────────────────────┼──────────┼───────┤
+│ Dry yeast:              │ 0.37g    │ 0.05% │
+│ Fresh yeast:            │ 1.12g    │ 0.15% │
+└─────────────────────────┴──────────┴───────┘
+```
+
+
+
+## How It Works
+
+The program calculates the required amounts of dough ingredients based on the type of dough:
+
+    For Yeast Dough:
+        Flour, water, salt, dry yeast, and fresh yeast are calculated based on the total dough weight.
+        Yeast percentage is 0.05% for dry yeast and 0.15% for fresh yeast.
+
+    For Sourdough:
+        Flour, water, salt, and sourdough starter are calculated.
+        The sourdough starter is calculated as 5% of the flour weight.
+
+Both types are hydrated to 60% water content.
 
 
