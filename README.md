@@ -33,8 +33,8 @@ node pizza.js <amount> <type>
 ```
 Where:
 
-<amount> is the number of pizzas.
-<type> is either Yeast or Sourdough.
+- **`<amount>`**: The number of pizzas you want to make (e.g., `1`, `5`, `10`).  
+- **`<type>`**: The type of dough (either `Yeast` or `Sourdough`).
 
 Example:
 ```
